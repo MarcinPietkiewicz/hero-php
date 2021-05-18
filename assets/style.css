@@ -3,34 +3,58 @@ body {
     font-family: sans-serif;
 }
 
-.hero {
+.hero-image {
     width: 100vw;
     height: 100vh;
-
+    position: relative;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    flex-direction: column;
-    justify-content: space-around;
-
-    text-align: center;
-    color: white;
-
     background-image: url('/assets/04.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-animation: blur 5s;
+    transition: ease-in 5s;
 }
 
-.hero h1 {
+
+@-webkit-keyframes blur {
+
+    0% {
+        -webkit-filter: blur(10px);
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+    }
+
+}
+
+.hero-text {
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    display: flex;
+    transition: ease-in 10s;
+}
+
+
+.hero-text h1 {
     font-size: 5em;
 
     margin-top: 0;
     margin-bottom: 0.5em;
 }
 
-.hero .btn {
+.hero-text .btn {
     display: block;
     width: 200px;
 
