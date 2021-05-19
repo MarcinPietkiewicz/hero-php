@@ -3,12 +3,32 @@
     src: url(OASIS400.ttf);
 }
 
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+}
+
+
+
 body {
     margin: 0;
     font-family: 'Oasis', sans-serif;
     font-weight: 400;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: black;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }
 
 #bg {
@@ -187,6 +207,78 @@ body {
     margin-right: 1px;
     margin-top: 21spx;
 }
+
+
+
+#bio,
+#blog,
+#contact {
+    min-height: 100vh;
+}
+
+#bio {
+    background-color: darkcyan;
+}
+
+#blog {
+    background-color: lightslategray;
+}
+
+#contact {
+    background-color: lightsteelblue;
+}
+
+.section-title {
+    font-size: 10vw;
+    width: 100%;
+    text-align: center;
+}
+
+.chevron-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.chevron {
+    padding: 15px;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.chevron:hover {
+    color: darkred;
+
+}
+
+.chevron:first-child {
+    position: absolute;
+    bottom: 15vh;
+    color: white;
+    opacity: 0.5;
+}
+
+
+.chevron::before {
+    border-style: solid;
+    border-width: 0.5em 0.5em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.9em;
+    left: 0.3em;
+    position: relative;
+    top: 0.3em;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0.90em;
+
+}
+
+.chevron.down:before {
+    /* top: 0; */
+    transform: rotate(135deg);
+}
+
+
 
 @media screen and (max-width: 1024px) {
     .hero-title {
