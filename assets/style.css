@@ -229,20 +229,44 @@ body {
 }
 
 .section-title {
-    font-size: 10vw;
+    font-size: 8vw;
     width: 100%;
     text-align: center;
 }
 
-.chevron-wrapper {
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 20vw;
+}
+
+.section-content {
+    font-family: 'Lato';
+    /* padding: 0px 5vw; */
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+#heroku {
+    color: white;
+    position: absolute;
+    bottom: 15vh;
     width: 100%;
-    text-align: center;
+}
+
+#heroku:hover {
+    color: darkred;
 }
 
 .chevron {
     padding: 15px;
     color: black;
+    text-align: center;
+    margin-bottom: 20px;
     transition: 0.5s ease;
+    opacity: 0.8;
 }
 
 .chevron:hover {
@@ -274,7 +298,6 @@ body {
 }
 
 .chevron.down:before {
-    /* top: 0; */
     transform: rotate(135deg);
 }
 
