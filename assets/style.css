@@ -229,7 +229,8 @@ body {
 }
 
 .section-title {
-    font-size: 8vw;
+    margin-top: 20px;
+    font-size: 7vw;
     width: 100%;
     text-align: center;
 }
