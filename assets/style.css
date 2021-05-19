@@ -116,9 +116,9 @@ body {
 
 .hero-menu {
     display: block;
-    width: 200px;
+    width: 300px;
     padding: 1em;
-    margin-top: 50px;
+    margin-top: 5em;
     margin-left: auto;
     margin-right: auto;
     color: white;
@@ -146,18 +146,51 @@ body {
 .menu-item {
     color: black;
     font-size: 3vw;
-    line-height: 1.5em;
+    line-height: 1.3em;
     transition: 0.5s ease;
 }
 
-.menu-item:hover {
+#timer {
+    font-size: 2.9vw;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+#reserve-button {
+    margin-top: 20px;
+    background-color: #222;
+    color: white;
+    width: 16vw;
+    padding: 0px 10px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+
+}
+
+.menu-item:nth-child(4) {
+    border-top: 5px black solid
+}
+
+.hero-menu a:hover {
     color: darkred;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+
+}
+
+#reserve-button:hover {
+    background-color: darkred;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    margin-right: 1px;
+    margin-top: 21spx;
 }
 
 @media screen and (max-width: 1024px) {
     .hero-title {
         width: 100%;
-        /* background-color: yellow; */
         text-align: center;
         top: 5vh;
 
@@ -175,6 +208,14 @@ body {
 
     .menu-item {
         font-size: 5vw;
+    }
+
+    #timer {
+        font-size: 4.9vw;
+    }
+
+    #reserve-button {
+        width: 26vw;
     }
 
 
