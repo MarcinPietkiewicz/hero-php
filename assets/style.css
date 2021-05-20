@@ -212,19 +212,29 @@ body {
 
 #bio,
 #blog,
-#contact {
-    min-height: 100vh;
+#trips {
+    /* min-height: 100vh; */
+}
+
+#bio h1, #blog h1 {
+    width:100%;
+    text-align: center;
+}
+
+
+#trips{
+    margin-bottom:50px;
 }
 
 #bio {
-    background-color: darkcyan;
+    background-color: steelblue;
 }
 
 #blog {
     background-color: lightslategray;
 }
 
-#contact {
+#trips {
     background-color: lightsteelblue;
 }
 

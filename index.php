@@ -17,7 +17,7 @@
         <div class="hero-menu">
         <a class="menu-item" href="#bio">bio</a>
         <a class="menu-item" href="#blog">blog</a>
-        <a class="menu-item" href="#contact">contact</a>
+        <a class="menu-item" href="#trips">trips</a>
         <div class="menu-item" id="next-trip">next trip in</div>
         <div id="timer"></div>
         <a class="menu-item" id="reserve-button" href="#contact">reserve</a>
@@ -37,9 +37,9 @@
         <a href="#contact" class="chevron down"></a>
     </div>
 
-<div id="contact" class="section">
-    <div class="section-title">contact</div>
-    <div class="section-content"><p><?php read_file_to_concert_modal('contact') ?></p></div>
+<div id="trips" class="section">
+    <div class="section-title">trips</div>
+    <div class="section-content"><p><?php read_file_to_concert_modal('trips') ?></p></div>
     <a href="#bg" class="chevron up"></a>
 </div>
 

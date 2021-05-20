@@ -10,15 +10,15 @@ exit;
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/edit.css">
-  <title>Edit blog</title>
+  <title>Edit trips</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="menu edit">
-    <div id="edit-title">Edit blog</div>
+    <div id="edit-title">Edit trips</div>
     <?php include 'protected/functions.php' ?>
     <?php include 'protected/password.php' ?>
-    <div id="version">Version - <?php read_file_name('blog'); ?></div>
+    <div id="version">Version - <?php read_file_name('trips'); ?></div>
     <form id="refresh-form" method="post">
          <div id="loading-options">
             <input id="submit-list" type="submit" name="read_dir" class="button" value="Refresh list and read newest" /> 
@@ -26,7 +26,7 @@ exit;
             <select id="filenames" name="filenames">
             <option value="">select file from a list</option>
             <?php
-            read_directory_to_option_list('blog');
+            read_directory_to_option_list('trips');
             ?>
             </select>
             <input type="submit" name="read_selected_file" class="button" id="read-file" value="and read it" /><br><br>
@@ -37,17 +37,17 @@ exit;
       <?php
       if (array_key_exists('read_dir', $_POST)) {
       } else if (array_key_exists('change', $_POST)) {
-        write_file('blog','blog');
+        write_file('trips','trips');
         change_secondary_email_in_pass_file('email');
-        send_confirmation_email('blog');
+        send_confirmation_email('trips');
       } else if (array_key_exists('read_selected_file', $_POST)) {
         read_selected_file();
       } 
       ?>
       </div>
     <form id="edit-form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-      <textarea id="change-area" id="blog" name="blog" rows="12" cols="60"><?php
-      read_file('blog');
+      <textarea id="change-area" id="trips" name="trips" rows="12" cols="60"><?php
+      read_file('trips');
       ?></textarea>
 
       <div id="conf">

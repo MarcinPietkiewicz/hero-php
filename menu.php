@@ -19,7 +19,7 @@ exit;
         <nav id="navigation">
           <a href="change-bio.php">Bio</a>
             <a href="change-blog.php">Blog</a>
-            <a href="change-contact.php">Contact</a>
+            <a href="change-trips.php">Trips</a>
         </nav>
     <div id="exit-buttons">
         <a class="button" href="index.php">Back to website</a>
