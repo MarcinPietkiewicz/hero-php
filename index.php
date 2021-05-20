@@ -20,7 +20,7 @@
         <a class="menu-item" href="#trips">trips</a>
         <div class="menu-item" id="next-trip">next trip in</div>
         <div id="timer"></div>
-        <a class="menu-item" id="reserve-button" href="#contact">reserve</a>
+        <a class="menu-item" id="reserve-button" href="#trips">reserve</a>
         </div>
 <a href="#bio" id="heroku" class="chevron down"></a>
     </div>
