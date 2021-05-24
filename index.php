@@ -32,9 +32,17 @@
     </div>
 
 <div id="bio" class="section">
-    <div class="section-title">bio</div>
-    <div class="section-content"><?php read_file_to_bio_modal('ENG','bio') ?></div>
-    <a href="#blog" class="chevron down"></a>
+    
+    <div class="section-bio-one"><div class="section-title">bio</div><?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-one-pic"><img src="" /></div>
+    <div class="section-bio-two"><div class="section-title">bio</div><?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-two-pic"><img src="" /></div>
+    <div class="section-bio-three"><div class="section-title">bio</div><?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-three-pic"><img src="" /></div>
+
+
+
+    <!-- <a href="#blog" class="chevron down"></a> -->
 </div>
 
 <div id="blog" class="section">

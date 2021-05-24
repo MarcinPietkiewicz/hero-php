@@ -8,46 +8,52 @@
     <title>Adam Trekowski</title>
 </head>
 <body>
+<!-- cover webpage until it loads -->
+<div style="display: none;" id="hideAll">&nbsp;</div>
+  <script type="text/javascript">
+    document.getElementById("hideAll").style.display = "block";
+  </script> 
+
+<?php include 'protected/functions.php' ?>
 <div id="bg"></div>
 
     <div class="hero-text">
-        <div class="hero-title">Adam Trekowski</div>
-        <div class="hero-desc">Professional Mountain Guide</div>
-        <div class="hero-menu">
+        <div id="hero-title">Adam Trekowski</div>
+        <div id="hero-desc">Professional Mountain Guide</div>
+        <div id="hero-menu">
         <a class="menu-item" href="#bio">bio</a>
         <a class="menu-item" href="#blog">blog</a>
-        <a class="menu-item" href="#contact">contact</a>
+        <a class="menu-item" href="#trips">trips</a>
         <div class="menu-item" id="next-trip">next trip in</div>
         <div id="timer"></div>
-        <a class="menu-item" id="reserve-button" href="#contact">reserve</a>
+        <a class="menu-item" id="reserve-button" href="#trips">reserve</a>
         </div>
-<a href="#bio" id="heroku" class="chevron down"></a>
+<!-- <a href="#bio" id="heroku" class="chevron down"></a> -->
     </div>
 
 <div id="bio" class="section">
-    <div class="section-title">bio</div>
-    <div class="section-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse orci quam, tempor vel pretium id, scelerisque sit amet lectus. Donec rhoncus urna elementum hendrerit vehicula. Donec mattis risus velit, non aliquet mauris vehicula vitae. Suspendisse vehicula pretium purus non varius. Curabitur non nibh in libero lacinia egestas eu at arcu. Nunc tempor sem quis volutpat lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ultrices vehicula urna, quis aliquam risus. Vivamus pretium urna metus, aliquet molestie sem accumsan auctor. Etiam lobortis eleifend nisl, ut ullamcorper est sodales nec. Quisque sagittis, urna vitae pellentesque porta, quam augue porttitor leo, in consectetur augue urna sed massa. Ut at leo tortor. Sed lectus metus, tincidunt nec nisl nec, tempor finibus mi.
-        Vestibulum vel ante odio. Aenean quis faucibus erat. Nunc pellentesque est at nisi ultricies feugiat. Ut et eleifend turpis. Phasellus sit amet tellus dui. Suspendisse vitae risus vehicula, semper orci non, pharetra arcu. Aenean ligula tellus, ultricies in tincidunt ac, maximus vitae lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat nisi eu semper aliquam. Integer a gravida est. Curabitur scelerisque consequat venenatis.
-        Nam vel scelerisque nunc, quis luctus orci. Vestibulum fermentum facilisis odio a malesuada. Nam vitae sodales velit, id hendrerit turpis. Etiam consectetur dolor quis urna dapibus, ut vehicula odio finibus. Praesent finibus volutpat nisl eu lobortis. Fusce porta tristique pulvinar. Nulla porta lacus velit, at auctor urna cursus id. Nulla lobortis, ipsum vel gravida mattis, ante diam porta erat, id tempor mi quam a arcu. Vestibulum congue, enim sit amet volutpat vehicula, mi leo pellentesque nunc, iaculis sagittis libero nibh eu lacus. Proin eget velit lorem. Sed quam turpis, molestie vel commodo id, malesuada nec nunc. Cras in lobortis nibh. Pellentesque id congue neque. Suspendisse nisi urna, lacinia sed suscipit vestibulum, ullamcorper vel ligula. Ut sit amet turpis pretium, semper arcu eget, efficitur nulla. Ut tincidunt tempus erat, nec vulputate augue feugiat in.
-        </p></div>
-    <a href="#blog" class="chevron down"></a>
+    
+    <div class="section-bio-one"><div class="section-title">bio</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor mauris vitae dui consectetur, id tempor velit porta. Maecenas maximus fringilla sollicitudin. Sed vitae lectus ullamcorper, consectetur nunc vitae, auctor odio. Etiam non risus ligula. Donec blandit lacinia dapibus. Mauris blandit nisl eu justo consectetur, cursus tincidunt eros fermentum. Etiam interdum, mi sit amet euismod varius, nibh leo consectetur odio, interdum commodo tortor sem eu sem. Maecenas lacus ante, tempus ac nulla quis, interdum ultrices quam. Etiam porta ante non magna vulputate, ac rutrum massa consectetur. Integer porta a dui vitae aliquet. Sed sollicitudin ullamcorper magna id tempor. Donec vitae orci aliquam, aliquet felis sit amet, ultricies velit. Integer fermentum sollicitudin quam, in vestibulum nisi sagittis id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-one-pic"><img src="" /></div>
+    <div class="section-bio-two-pic"><img src="" /></div>
+    <div class="section-bio-two">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor mauris vitae dui consectetur, id tempor velit porta. Maecenas maximus fringilla sollicitudin. Sed vitae lectus ullamcorper, consectetur nunc vitae, auctor odio. Etiam non risus ligula. Donec blandit lacinia dapibus. Mauris blandit nisl eu justo consectetur, cursus tincidunt eros fermentum. Etiam interdum, mi sit amet euismod varius, nibh leo consectetur odio, interdum commodo tortor sem eu sem. Maecenas lacus ante, tempus ac nulla quis, interdum ultrices quam. Etiam porta ante non magna vulputate, ac rutrum massa consectetur. Integer porta a dui vitae aliquet. Sed sollicitudin ullamcorper magna id tempor. Donec vitae orci aliquam, aliquet felis sit amet, ultricies velit. Integer fermentum sollicitudin quam, in vestibulum nisi sagittis id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor mauris vitae dui consectetur, id tempor velit porta. Maecenas maximus fringilla sollicitudin. Sed vitae lectus ullamcorper, consectetur nunc vitae, auctor odio. Etiam non risus ligula. Donec blandit lacinia dapibus. Mauris blandit nisl eu justo consectetur, cursus tincidunt eros fermentum. Etiam interdum, mi sit amet euismod varius, nibh leo consectetur odio, interdum commodo tortor sem eu sem. Maecenas lacus ante, tempus ac nulla quis, interdum ultrices quam. Etiam porta ante non magna vulputate, ac rutrum massa consectetur. Integer porta a dui vitae aliquet. Sed sollicitudin ullamcorper magna id tempor. Donec vitae orci aliquam, aliquet felis sit amet, ultricies velit. Integer fermentum sollicitudin quam, in vestibulum nisi sagittis id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-three-pic"><img src="" /></div>
+
+
+
+    <!-- <a href="#blog" class="chevron down"></a> -->
 </div>
 
 <div id="blog" class="section">
     <div class="section-title">blog</div>
-    <div class="section-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse orci quam, tempor vel pretium id, scelerisque sit amet lectus. Donec rhoncus urna elementum hendrerit vehicula. Donec mattis risus velit, non aliquet mauris vehicula vitae. Suspendisse vehicula pretium purus non varius. Curabitur non nibh in libero lacinia egestas eu at arcu. Nunc tempor sem quis volutpat lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ultrices vehicula urna, quis aliquam risus. Vivamus pretium urna metus, aliquet molestie sem accumsan auctor. Etiam lobortis eleifend nisl, ut ullamcorper est sodales nec. Quisque sagittis, urna vitae pellentesque porta, quam augue porttitor leo, in consectetur augue urna sed massa. Ut at leo tortor. Sed lectus metus, tincidunt nec nisl nec, tempor finibus mi.
-        Vestibulum vel ante odio. Aenean quis faucibus erat. Nunc pellentesque est at nisi ultricies feugiat. Ut et eleifend turpis. Phasellus sit amet tellus dui. Suspendisse vitae risus vehicula, semper orci non, pharetra arcu. Aenean ligula tellus, ultricies in tincidunt ac, maximus vitae lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat nisi eu semper aliquam. Integer a gravida est. Curabitur scelerisque consequat venenatis.
-        Nam vel scelerisque nunc, quis luctus orci. Vestibulum fermentum facilisis odio a malesuada. Nam vitae sodales velit, id hendrerit turpis. Etiam consectetur dolor quis urna dapibus, ut vehicula odio finibus. Praesent finibus volutpat nisl eu lobortis. Fusce porta tristique pulvinar. Nulla porta lacus velit, at auctor urna cursus id. Nulla lobortis, ipsum vel gravida mattis, ante diam porta erat, id tempor mi quam a arcu. Vestibulum congue, enim sit amet volutpat vehicula, mi leo pellentesque nunc, iaculis sagittis libero nibh eu lacus. Proin eget velit lorem. Sed quam turpis, molestie vel commodo id, malesuada nec nunc. Cras in lobortis nibh. Pellentesque id congue neque. Suspendisse nisi urna, lacinia sed suscipit vestibulum, ullamcorper vel ligula. Ut sit amet turpis pretium, semper arcu eget, efficitur nulla. Ut tincidunt tempus erat, nec vulputate augue feugiat in.
-        </p></div>
+    <div class="section-content"><p><?php read_file_to_bio_modal('ENG','blog') ?>Lorem ipsum</p></div>
         <a href="#contact" class="chevron down"></a>
     </div>
 
-<div id="contact" class="section">
-    <div class="section-title">contact</div>
-    <div class="section-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse orci quam, tempor vel pretium id, scelerisque sit amet lectus. Donec rhoncus urna elementum hendrerit vehicula. Donec mattis risus velit, non aliquet mauris vehicula vitae. Suspendisse vehicula pretium purus non varius. Curabitur non nibh in libero lacinia egestas eu at arcu. Nunc tempor sem quis volutpat lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ultrices vehicula urna, quis aliquam risus. Vivamus pretium urna metus, aliquet molestie sem accumsan auctor. Etiam lobortis eleifend nisl, ut ullamcorper est sodales nec. Quisque sagittis, urna vitae pellentesque porta, quam augue porttitor leo, in consectetur augue urna sed massa. Ut at leo tortor. Sed lectus metus, tincidunt nec nisl nec, tempor finibus mi.
-        Vestibulum vel ante odio. Aenean quis faucibus erat. Nunc pellentesque est at nisi ultricies feugiat. Ut et eleifend turpis. Phasellus sit amet tellus dui. Suspendisse vitae risus vehicula, semper orci non, pharetra arcu. Aenean ligula tellus, ultricies in tincidunt ac, maximus vitae lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat nisi eu semper aliquam. Integer a gravida est. Curabitur scelerisque consequat venenatis.
-        Nam vel scelerisque nunc, quis luctus orci. Vestibulum fermentum facilisis odio a malesuada. Nam vitae sodales velit, id hendrerit turpis. Etiam consectetur dolor quis urna dapibus, ut vehicula odio finibus. Praesent finibus volutpat nisl eu lobortis. Fusce porta tristique pulvinar. Nulla porta lacus velit, at auctor urna cursus id. Nulla lobortis, ipsum vel gravida mattis, ante diam porta erat, id tempor mi quam a arcu. Vestibulum congue, enim sit amet volutpat vehicula, mi leo pellentesque nunc, iaculis sagittis libero nibh eu lacus. Proin eget velit lorem. Sed quam turpis, molestie vel commodo id, malesuada nec nunc. Cras in lobortis nibh. Pellentesque id congue neque. Suspendisse nisi urna, lacinia sed suscipit vestibulum, ullamcorper vel ligula. Ut sit amet turpis pretium, semper arcu eget, efficitur nulla. Ut tincidunt tempus erat, nec vulputate augue feugiat in.
-        </p></div>
+<div id="trips" class="section">
+    <div class="section-title">trips</div>
+    <div class="section-content"><p><?php read_file_to_concert_modal('trips') ?></p></div>
     <a href="#bg" class="chevron up"></a>
 </div>
 

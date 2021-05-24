@@ -26,7 +26,7 @@ body {
     margin: 0;
     font-family: 'Oasis', sans-serif;
     font-weight: 400;
-    background-color: black;
+    background-color: #222;
     margin:0px;
 }
 
@@ -102,7 +102,7 @@ body {
    right: 0px; 
    top: 0px; 
    bottom: 0px; 
-   background-color: #333;
+   background-color: #222;
    z-index: 99;
  }
 
@@ -228,7 +228,7 @@ body {
     margin-top: 21spx;
 }
 
-#bio h1, #blog h1 {
+#bio h1, #blog h1, #trips h1 {
     width:100%;
     text-align: center;
 }
@@ -238,7 +238,7 @@ body {
 }
 
 #bio {
-    background-color: steelblue;
+    background-color: burlywood;
 }
 
 #blog {
@@ -249,25 +249,55 @@ body {
     background-color: lightsteelblue;
 }
 
-.section-title {
-    margin-top: 20px;
+
+.section {
+    width:100%;
+    max-width:1000px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-gap:5vw;
+    padding: 60px 0px;
+    margin:0px auto;
+}
+
+#bio{
+    background-color:#222;
+}
+
+
+.section-title{
+    font-family: 'Oasis', sans-serif;
+    margin-top:0px;
+    padding-top:0px;
+    margin-bottom:30px;
     font-size: 7vw;
     width: 100%;
     text-align: center;
 }
-
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px 20vw;
-}
-
 .section-content {
     font-family: 'Lato';
     text-align: justify;
     font-size: 20px;
 }
+
+.section-bio-one-pic, .section-bio-two-pic, .section-bio-three-pic{
+    background-color:yellowgreen;
+}
+
+.section-bio-one, .section-bio-two, .section-bio-three{
+    font-family: 'Lato';
+    text-align: justify;
+    font-size: 20px;
+    color:white;
+}
+
+.section-bio-one, .section-bio-three{
+padding-left:3vw;}
+
+
+.section-bio-two{
+    padding-right:3vw;}
 
 
 #heroku {
