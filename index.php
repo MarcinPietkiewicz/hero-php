@@ -33,11 +33,11 @@
 
 <div class="section bio" id="bio">
     
-    <div class="section-bio-one"><div class="section-title">bio</div><?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-one"><div class="section-title">bio</div><?php read_file_to_bio_modal('ONE','bio') ?></div>
     <div class="section-bio-one-pic"><img src="assets/camp-hills.jpg" /></div>
     <div class="section-bio-two-pic"><img src="assets/four-people-sitting.jpg" /></div>
-    <div class="section-bio-two"><?php read_file_to_bio_modal('ENG','bio') ?></div>
-    <div class="section-bio-three"><?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-two"><?php read_file_to_bio_modal('TWO','bio') ?></div>
+    <div class="section-bio-three"><?php read_file_to_bio_modal('THREE','bio') ?></div>
     <div class="section-bio-three-pic"><img src="assets/himalayas.jpg" /></div>
 
 
