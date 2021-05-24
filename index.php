@@ -28,7 +28,7 @@
         <div id="timer"></div>
         <a class="menu-item" id="reserve-button" href="#trips">reserve</a>
         </div>
-<a href="#bio" id="heroku" class="chevron down"></a>
+<!-- <a href="#bio" id="heroku" class="chevron down"></a> -->
     </div>
 
 <div id="bio" class="section">
