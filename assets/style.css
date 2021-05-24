@@ -26,7 +26,7 @@ body {
     margin: 0;
     font-family: 'Oasis', sans-serif;
     font-weight: 400;
-    background-color: #222;
+    background-color: #282828;
     margin:0px;
 }
 
@@ -102,7 +102,7 @@ body {
    right: 0px; 
    top: 0px; 
    bottom: 0px; 
-   background-color: #222;
+   background-color: #282828;
    z-index: 99;
  }
 
@@ -196,7 +196,7 @@ body {
 
 #reserve-button {
     margin-top: 20px;
-    background-color: #222;
+    background-color: #282828;
     color: white;
     width: 16vw;
     padding: 0px 10px;
@@ -237,10 +237,6 @@ body {
     margin-bottom:50px;
 }
 
-#bio {
-    background-color: burlywood;
-}
-
 #blog {
     background-color: lightslategray;
 }
@@ -251,18 +247,17 @@ body {
 
 
 .section {
-    width:100%;
     max-width:1000px;
     display: grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows:1fr 1fr;
     grid-gap:5vw;
-    padding: 60px 0px;
+    padding: 60px 3vw;
     margin:0px auto;
 }
 
-#bio{
-    background-color:#222;
+.bio{
+    /* background-color:green; */
 }
 
 
@@ -281,9 +276,14 @@ body {
     font-size: 20px;
 }
 
-.section-bio-one-pic, .section-bio-two-pic, .section-bio-three-pic{
-    background-color:yellowgreen;
+
+.section-bio-one-pic img, .section-bio-two-pic img, .section-bio-three-pic img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
 }
+
+
 
 .section-bio-one, .section-bio-two, .section-bio-three{
     font-family: 'Lato';
@@ -291,14 +291,6 @@ body {
     font-size: 20px;
     color:white;
 }
-
-.section-bio-one, .section-bio-three{
-padding-left:3vw;}
-
-
-.section-bio-two{
-    padding-right:3vw;}
-
 
 #heroku {
     color: white;

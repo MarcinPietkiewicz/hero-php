@@ -31,14 +31,14 @@
 <!-- <a href="#bio" id="heroku" class="chevron down"></a> -->
     </div>
 
-<div id="bio" class="section">
+<div class="section bio" id="bio">
     
     <div class="section-bio-one"><div class="section-title">bio</div><?php read_file_to_bio_modal('ENG','bio') ?></div>
-    <div class="section-bio-one-pic"><img src="" /></div>
-    <div class="section-bio-two"><div class="section-title">bio</div><?php read_file_to_bio_modal('ENG','bio') ?></div>
-    <div class="section-bio-two-pic"><img src="" /></div>
-    <div class="section-bio-three"><div class="section-title">bio</div><?php read_file_to_bio_modal('ENG','bio') ?></div>
-    <div class="section-bio-three-pic"><img src="" /></div>
+    <div class="section-bio-one-pic"><img src="assets/camp-hills.jpg" /></div>
+    <div class="section-bio-two-pic"><img src="assets/four-people-sitting.jpg" /></div>
+    <div class="section-bio-two"><?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-three"><?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-three-pic"><img src="assets/himalayas.jpg" /></div>
 
 
 
@@ -47,7 +47,7 @@
 
 <div id="blog" class="section">
     <div class="section-title">blog</div>
-    <div class="section-content"><p><?php read_file_to_bio_modal('ENG','blog') ?></p></div>
+    <div class="section-content"><p><?php read_file_to_bio_modal('ENG','blog') ?>Lorem ipsum</p></div>
         <a href="#contact" class="chevron down"></a>
     </div>
 
