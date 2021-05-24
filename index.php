@@ -8,13 +8,19 @@
     <title>Adam Trekowski</title>
 </head>
 <body>
+<!-- cover webpage until it loads -->
+<div style="display: none;" id="hideAll">&nbsp;</div>
+  <script type="text/javascript">
+    document.getElementById("hideAll").style.display = "block";
+  </script> 
+
 <?php include 'protected/functions.php' ?>
 <div id="bg"></div>
 
     <div class="hero-text">
-        <div class="hero-title">Adam Trekowski</div>
-        <div class="hero-desc">Professional Mountain Guide</div>
-        <div class="hero-menu">
+        <div id="hero-title">Adam Trekowski</div>
+        <div id="hero-desc">Professional Mountain Guide</div>
+        <div id="hero-menu">
         <a class="menu-item" href="#bio">bio</a>
         <a class="menu-item" href="#blog">blog</a>
         <a class="menu-item" href="#trips">trips</a>
