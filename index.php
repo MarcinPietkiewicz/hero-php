@@ -50,13 +50,13 @@
 <div id="blog" class="section">
     <div class="section-title">blog</div>
     <div class="section-content"><p><?php read_file_to_bio_modal('ENG','blog') ?>Lorem ipsum</p></div>
-        <a href="#contact" class="chevron down"></a>
+        <!-- <a href="#contact" class="chevron down"></a> -->
     </div>
 
 <div id="trips" class="section">
     <div class="section-title">trips</div>
     <div class="section-content"><p><?php read_file_to_concert_modal('trips') ?></p></div>
-    <a href="#bg" class="chevron up"></a>
+    <!-- <a href="#bg" class="chevron up"></a> -->
 </div>
 
 <script src="assets/script.js"></script>

@@ -183,7 +183,6 @@ function get_newest_file_content($dir){
 }
 function print_bio_html($contents, $language){
   $sections = preg_split('/\R{2}/', $contents);
-  echo '<br>';
   foreach ($sections as $section)
   {
     $lines = preg_split('/\R/', $section); 
@@ -206,7 +205,6 @@ function print_bio_html($contents, $language){
       }
     }
   }
-  echo '<br>';
 }
 function print_concert_html($contents){
   $sections = preg_split('/\R{2}/', $contents);
