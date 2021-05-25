@@ -240,18 +240,11 @@ body {
 
 #trips{
     margin-bottom:50px;
-}
-
-#blog {
-    background-color: lightslategray;
-}
-
-#trips {
     background-color: lightsteelblue;
 }
 
 
-.section {
+.bio {
     max-width:1000px;
     display: grid;
     grid-template-columns:1fr 1fr;
@@ -261,10 +254,31 @@ body {
     margin:0px auto;
 }
 
-.bio{
-    /* background-color:green; */
+
+.blog{
+    max-width:1000px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:auto 1fr 1fr;
+    grid-gap:5vw;
+    padding: 60px 3vw;
+    margin:0px auto; 
+    background-color:#153741;
+    color:white;
+    grid-auto-flow: row;
+
 }
 
+.blog .section-title{
+    grid-column-start:span 2;
+    /* background-color:#56747f; */
+}
+.blog .tile{
+    background-color:#204a57;
+    box-shadow:2px 2px 3px 8px rgba(0,0,0,0.2);
+    font-family:'Lato', sans-serif;
+    height:400px;
+}
 
 .section-title{
     font-family: 'Oasis', sans-serif;
@@ -350,8 +364,6 @@ body {
     transform: rotate(135deg);
 }
 
-
-
 @media screen and (max-width: 1024px) {
     #hero-title {
         width: 90%;
@@ -390,7 +402,7 @@ body {
     }
 
 
-    .section{
+    .bio{
         grid-template-columns: 1fr;
         grid-auto-rows:auto;
         grid-template-rows: repeat(6,auto);

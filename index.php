@@ -48,9 +48,21 @@
     <!-- <a href="#blog" class="chevron down"></a> -->
 </div>
 
-<div id="blog" class="section">
+<div id="blog" class="section blog">
     <div class="section-title">blog</div>
-    <div class="section-content"><p><?php read_file_to_bio_modal('ENG','blog') ?>Lorem ipsum</p></div>
+    <div class="tile">
+        <div class="photo"><div class="photo-date">30 December 2020</div></div>
+        <div class="tile-title">Tile title 1</div>
+        <div class="text-preview">Tile text preview first sentence only plus ....[read more]</div>
+
+</div>
+    <div class="tile">Section 2</div>
+    <div class="tile">Section 3</div>
+    <div class="tile">Section 4</div>
+
+    
+    
+    
         <!-- <a href="#contact" class="chevron down"></a> -->
     </div>
 
