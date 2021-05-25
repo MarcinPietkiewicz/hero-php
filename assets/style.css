@@ -256,7 +256,6 @@ body {
 
 
 .blog{
-    /* width:100%; */
     max-width:1000px;
     display: grid;
     grid-template-columns:repeat(2,1fr);
@@ -264,8 +263,8 @@ body {
     grid-gap:5vw;
     padding: 60px 3vw;
     margin:0px auto; 
-    /* background-color:yellow; */
     color:white;
+    /* text-shadow: 1px 1px 1px 1px black; */
     grid-auto-flow: row;
 }
 
@@ -289,6 +288,12 @@ body {
         width:100%;
         height:auto;
 
+}
+
+.tile-title, .text-preview{
+    /* color:green; */
+    text-shadow: 1px 1px 1px 3px rgb(0, 0, 0,1);
+    background-color:black;
 }
 
 .blog .tile:hover{
@@ -470,6 +475,6 @@ body {
     .blog .tile img{
         width:fill;
         height:auto;
-
+    }
 
 }
