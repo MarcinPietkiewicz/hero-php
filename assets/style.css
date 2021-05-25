@@ -278,6 +278,7 @@ body {
     box-shadow:2px 2px 3px 8px rgba(0,0,0,0.2);
     font-family:'Lato', sans-serif;
     height:400px;
+    border-radius:10px;
 }
 
 .section-title{
@@ -417,12 +418,28 @@ body {
         margin-bottom:0px;
     }
     .section-bio-two-pic{
-order:3;
+        order:3;
     }
 
     .section-bio-two{
         order:2;
 
     }
+
+    .blog{
+        grid-template-columns:1fr;
+        grid-template-rows:auto repeat(4, 1 fr);
+        grid-gap:5vw;
+        /* padding: 60px 3vw; */
+        margin:0px auto; 
+    
+    }
+    
+    .blog .section-title{
+        grid-column-start:span 1;
+        /* background-color:#56747f; */
+    }
+
+
 
 }
