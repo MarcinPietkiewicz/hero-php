@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/style.css">
     <title>Adam Trekowski</title>
 </head>
@@ -31,30 +32,54 @@
 <!-- <a href="#bio" id="heroku" class="chevron down"></a> -->
     </div>
 
-<div class="section bio">
+<div class="section bio" id="bio">
     
-    <div class="section-bio-one"><div class="section-title">bio</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor mauris vitae dui consectetur, id tempor velit porta. Maecenas maximus fringilla sollicitudin. Sed vitae lectus ullamcorper, consectetur nunc vitae, auctor odio. Etiam non risus ligula. Donec blandit lacinia dapibus. Mauris blandit nisl eu justo consectetur, cursus tincidunt eros fermentum. Etiam interdum, mi sit amet euismod varius, nibh leo consectetur odio, interdum commodo tortor sem eu sem. Maecenas lacus ante, tempus ac nulla quis, interdum ultrices quam. Etiam porta ante non magna vulputate, ac rutrum massa consectetur. Integer porta a dui vitae aliquet. Sed sollicitudin ullamcorper magna id tempor. Donec vitae orci aliquam, aliquet felis sit amet, ultricies velit. Integer fermentum sollicitudin quam, in vestibulum nisi sagittis id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-one">
+        <div class="section-title">bio</div>
+        <?php read_file_to_bio_modal('ONE','bio') ?></div>
     <div class="section-bio-one-pic"><img src="assets/camp-hills.jpg" /></div>
     <div class="section-bio-two-pic"><img src="assets/four-people-sitting.jpg" /></div>
-    <div class="section-bio-two">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In porttitor mauris vitae dui consectetur, id tempor velit porta. Maecenas maximus fringilla sollicitudin. Sed vitae lectus ullamcorper, consectetur nunc vitae, auctor odio. Etiam non risus ligula. Donec blandit lacinia dapibus. Mauris blandit nisl eu justo consectetur, cursus tincidunt eros fermentum. Etiam interdum, mi sit amet euismod varius, nibh leo consectetur odio, interdum commodo tortor sem eu sem. Maecenas lacus ante, tempus ac nulla quis, interdum ultrices quam. Etiam porta ante non magna vulputate, ac rutrum massa consectetur. Integer porta a dui vitae aliquet. Sed sollicitudin ullamcorper magna id tempor. Donec vitae orci aliquam, aliquet felis sit amet, ultricies velit. Integer fermentum sollicitudin quam, in vestibulum nisi sagittis id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<?php read_file_to_bio_modal('ENG','bio') ?></div>
-    <div class="section-bio-three">Lorem ipsum doassets sit amet, consectetur adipiscing elit. In porttitor mauris vitae dui consectetur, id tempor velit porta. Maecenas maximus fringilla sollicitudin. Sed vitae lectus ullamcorper, consectetur nunc vitae, auctor odio. Etiam non risus ligula. Donec blandit lacinia dapibus. Mauris blandit nisl eu justo consectetur, cursus tincidunt eros fermentum. Etiam interdum, mi sit amet euismod varius, nibh leo consectetur odio, interdum commodo tortor sem eu sem. Maecenas lacus ante, tempus ac nulla quis, interdum ultrices quam. Etiam porta ante non magna vulputate, ac rutrum massa consectetur. Integer porta a dui vitae aliquet. Sed sollicitudin ullamcorper magna id tempor. Donec vitae orci aliquam, aliquet felis sit amet, ultricies velit. Integer fermentum sollicitudin quam, in vestibulum nisi sagittis id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<?php read_file_to_bio_modal('ENG','bio') ?></div>
+    <div class="section-bio-two"><?php read_file_to_bio_modal('TWO','bio') ?></div>
+    <div class="section-bio-three"><?php read_file_to_bio_modal('THREE','bio') ?></div>
     <div class="section-bio-three-pic"><img src="assets/himalayas.jpg" /></div>
 
 
 
     <!-- <a href="#blog" class="chevron down"></a> -->
 </div>
-
-<div id="blog" class="section">
+<!-- <div class="blog-background"> -->
+<div id="blog" class="section blog">
     <div class="section-title">blog</div>
-    <div class="section-content"><p><?php read_file_to_bio_modal('ENG','blog') ?>Lorem ipsum</p></div>
-        <a href="#contact" class="chevron down"></a>
+    <div class="tile">
+        <div class="tile-image"><img src="assets/055.jpg"></div>
+        <div class="tile-title">10 levadas - 100 miles in Madeira</div>
+        <div class="text-preview">One week trip challenge we made with our international walking group - to visit all levadas on the beatiful island.....[read more]</div>
+</div>
+<div class="tile">
+        <div class="tile-image"><img src="assets/066.jpg"></div>
+        <div class="tile-title">Uncharted Siberia - in the footsteps of early pioneers</div>
+        <div class="text-preview">The region which ruthlessness to journeys is dwarfed only by Antarctica was our target during summer months of 2018...[read more]</div>
+</div>
+<div class="tile">
+        <div class="tile-image"><img src="assets/077.jpg"></div>
+        <div class="tile-title">Scotland walk marathon - winds and clouds</div>
+        <div class="text-preview">It was only a matter of time when we start to plow through grassy midlands of the Great Scotland...[read more]</div>
+</div>
+<div class="tile">
+        <div class="tile-image"><img src="assets/055.jpg"></div>
+        <?php read_file_to_blog_thumb('blog'); ?>
+</div>
+<!-- </div> -->
+    
+    
+    
+        <!-- <a href="#contact" class="chevron down"></a> -->
     </div>
 
 <div id="trips" class="section">
-    <div class="section-title">trips</div>
-    <div class="section-content"><p><?php read_file_to_concert_modal('trips') ?></p></div>
-    <a href="#bg" class="chevron up"></a>
+    <div class="section-title">upcoming trips</div>
+    <div class="section-content"><p></p></div>
+    <!-- <a href="#bg" class="chevron up"></a> -->
 </div>
 
 <script src="assets/script.js"></script>
