@@ -355,23 +355,32 @@ body {
     max-width:900px;
     display:flex;
     flex-direction:row;
-    transform: skew(-5deg);
+    transform: skew(-15deg);
     border-radius:10px;
     overflow: hidden;
     box-sizing: border-box;
     box-shadow:6px 6px 0px 5px #000, 8px 8px 10px 5px rgba(0,0,0,0.1);
 }
 
+.romb-tile .tile-info{
+    transform: skew(0deg);
+    
+}
+
+.romb-tile:hover{
+    filter:brightness(110%);
+}
+
 .romb-tile:nth-of-type(2){
-    background-color:sandybrown;
+    background-color:rgb(252, 229, 126);
 }
 
 .romb-tile:nth-of-type(3){
-    background-color:lightsteelblue;
+    background-color:rgb(156, 192, 240);
 }
 
 .romb-tile:nth-of-type(4){
-    background-color:rgb(46, 179, 103);
+    background-color:rgb(157, 206, 169);
 }
 
 .romb-tile img {
@@ -386,24 +395,25 @@ body {
     display:flex;
     flex-direction:column;
     align-items:center;
-    justify-content:space-around;
+    justify-content:space-evenly;
     padding:15px;
 }
 
 .romb-tile .title{
     font-family: 'Lato';
-    /* color:yellow; */
-    font-size:42px;
+    font-size:min(40px, 4vw);
 }
 
 .romb-tile .trip-info{
     font-family: 'Lato';
-    font-size:24px;
+    font-size:min(24px, 3vw);
 }
 
 
 /* ******* footer section ****** */
 /* ***************************** */
+
+
 
 
 
