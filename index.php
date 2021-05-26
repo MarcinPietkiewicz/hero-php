@@ -47,7 +47,7 @@
 
     <!-- <a href="#blog" class="chevron down"></a> -->
 </div>
-<!-- <div class="blog-background"> -->
+
 <div id="blog" class="section blog">
     <div class="section-title">blog</div>
     <div class="tile">
@@ -67,19 +67,20 @@
 </div>
 <div class="tile">
         <div class="tile-image"><img src="assets/055.jpg"></div>
-        <div class="tile-title">10 levadas - 100 miles in Madeira</div>
-        <div class="text-preview">One week trip challenge we made with our international walking group - to visit all levadas on the beatiful island.....[read more]</div>
+        <?php read_file_to_blog_thumb('blog'); ?>
 </div>
-<!-- </div> -->
+
     
     
     
         <!-- <a href="#contact" class="chevron down"></a> -->
     </div>
 
-<div id="trips" class="section">
-    <div class="section-title">trips</div>
-    <div class="section-content"><p><?php read_file_to_concert_modal('trips') ?></p></div>
+
+
+
+
+    <div class="section-content"><p></p></div>
     <!-- <a href="#bg" class="chevron up"></a> -->
 </div>
 

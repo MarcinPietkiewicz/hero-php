@@ -167,6 +167,12 @@ function read_file_to_bio_modal($language = '', $catalog){
   $contents = get_newest_file_content($catalog);
   print_bio_html($contents, $language);
 }
+
+function read_file_to_blog_thumb($catalog, $post = 0){
+  $contents = get_newest_file_content($catalog);
+  print_blog_html_thumb($contents, $post);
+}
+
 // update protected file with new email if changed
 function change_secondary_email_in_pass_file($new_email) {
   $data = explode("\n", rtrim(file_get_contents('protected/password.php')));
@@ -227,5 +233,35 @@ function print_concert_html($contents){
   }
 }
 
+
+function print_blog_html_thumb($contents){
+  $sections = preg_split('/\R{2}/', $contents);
+  foreach ($sections as $section)
+  {
+    $lines = preg_split('/\R/', $section); 
+    $splitter = '###';
+    if ($lines[0] == $splitter){
+      $counter = 0;
+      foreach ($lines as $line)
+      {
+        if ($counter == 0){
+        $counter++;
+        continue;
+        }
+        if ($counter == 1){
+          echo '<div class="tile-title">'.$line.'</div>';
+          $counter++;
+          continue;
+          
+        }
+        if ($counter == 2){
+        echo '<div class="text-preview">'.$line.' ...[read more]</div>';
+        $counter++;
+        
+      }
+      }
+    }
+  }
+}
 
 ?>

@@ -336,8 +336,57 @@ body {
 
 #trips{
     margin-bottom:50px;
-    background-color: lightsteelblue;
+    background-color: #333;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
+
+#trips .section-title{
+    margin-top:20px;
+    color:white;
+}
+.romb-tile{
+    border:5px solid rgb(97, 97, 97);
+    width:90%;
+    margin: 25px 0px;
+    max-width:900px;
+    display:flex;
+    flex-direction:row;
+    transform: skew(-5deg);
+    border-radius:10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color:rgb(255, 255, 255);
+    box-shadow:6px 6px 0px 5px rgb(97, 97, 97);
+    
+
+}
+.romb-tile img {
+    /* transform:skew(10deg); */
+    width:100%;
+    height:auto;
+    margin:-10px;
+    padding:0px;
+}
+
+
+.rom-tile
+
+.romb-tile .title{
+    font-family: 'Lato';
+    /* color:yellow; */
+    font-size:34px;
+}
+
+
+
+
+
+
+/* *** chevron / other sutff *** */
+/* ***************************** */
+
 
 #heroku {
     color: white;
@@ -390,6 +439,12 @@ body {
 .chevron.down:before {
     transform: rotate(135deg);
 }
+
+
+
+
+
+
 
 /* ******** mobile view ******** */
 /* ***************************** */
