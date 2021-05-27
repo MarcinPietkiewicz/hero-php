@@ -70,19 +70,45 @@
         <?php read_file_to_blog_thumb('blog'); ?>
 </div>
 
-    
-    
-    
         <!-- <a href="#contact" class="chevron down"></a> -->
     </div>
 
+    <div id="trips" class="section">
+        <div class="section-title">upcoming trips</div>
+        <div class="romb-tile">
+            <div class="tile-image"><img src="assets/018.jpg"></div>
+            <div class="tile-info">
+            <div class="title">Beach run!</div>
+            <div class="trip-info">Summer chill rush - 40km - walking and running through tough sand and brisky water!</div>
+        </div></div>
+        <div class="romb-tile">
+            <div class="tile-image"><img src="assets/019.jpg"></div>
+            <div class="tile-info">
+            <div class="title">Mountain run!</div>
+            <div class="trip-info">Summer chill rush - 40km - walking and running through tough sand and brisky water!</div>
+        </div></div>
+        <div class="romb-tile">
+            <div class="tile-image"><img src="assets/020.jpg"></div>
+            <div class="tile-info">
+            <div class="title">Village tresspass!</div>
+            <div class="trip-info">Summer chill rush - 40km - walking and running through tough sand and brisky water!</div>
+        </div></div>
+    </div>
+    <footer>
+        <div class="footer-stuff">
+            <div class="footer-icons">
+                <a href="#trips"><img src="assets/facebook.png" alt="facebook" /></a>
+                <a href="#trips"><img src="assets/instagram.png" alt="instagram" /></a>
+                <a href="#trips"><img src="assets/twitter.png" alt="twitter" /></a>
+                <a href="#trips"><img src="assets/youtube.png" alt="youtube" /></a>
+
+            </div>
+            <div class="footer-text">All rights reserved Adam Trekowski 2021</div>
+            <a class="login" href="login.php">Login</a>
+        </div>
 
 
-
-
-    <div class="section-content"><p></p></div>
-    <!-- <a href="#bg" class="chevron up"></a> -->
-</div>
+    </footer>
 
 <script src="assets/script.js"></script>
 </body>

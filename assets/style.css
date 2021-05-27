@@ -263,6 +263,7 @@ body {
     grid-gap:5vw;
     padding: 60px 3vw;
     margin:0px auto;
+    background-color:rgb(56, 59, 63);
 }
 
 
@@ -316,7 +317,7 @@ body {
     padding:20px;
 }
 
-.section-title{
+.blog .section-title{
     font-family: 'Oasis', sans-serif;
     margin-top:0px;
     padding-top:0px;
@@ -326,94 +327,125 @@ body {
     text-align: center;
 }
 
-.tile-title, .text-preview{
+.blog .tile-title, .text-preview{
     text-shadow: 1px 1px 1px 3px rgb(0, 0, 0,1);
     background-color:black;
 }
 
 /* ****** trips section ******** */
 /* ***************************** */
-
-#trips{
-    margin-bottom:50px;
-    background-color: #333;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-#trips .section-title{
-    margin-top:20px;
+.trips{
+    max-width:1000px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:auto 1fr 1fr;
+    grid-gap:5vw;
+    padding: 60px 3vw;
+    margin:0px auto; 
     color:white;
+    grid-auto-flow: row;
 }
 
-
-.romb-tile{
-    border:5px solid black;
-    width:90%;
-    margin: 25px 0px;
-    max-width:900px;
-    display:flex;
-    flex-direction:row;
-    transform: skew(-15deg);
+.trips .section-title{
+    grid-column-start:span 2;
+}
+.trips .tile{
+    background-color:#222;
+    box-shadow:2px 2px 3px 5px rgba(0,0,0,0.1);
+    font-family:'Lato', sans-serif;
     border-radius:10px;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:400px 50px auto;
+    align-items: center;
     overflow: hidden;
-    box-sizing: border-box;
-    box-shadow:6px 6px 0px 5px #000, 8px 8px 10px 5px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+.trips .tile img{
+        width:100%;
+        height:auto;
 }
 
-.romb-tile .tile-info{
-    transform: skew(0deg);
-    
+.trips .tile:hover{
+    filter: brightness(120%);
 }
 
-.romb-tile:hover{
-    filter:brightness(110%);
+.trips .tile .tile-title{
+    font-size:24px;
+    padding:20px;
+
 }
 
-.romb-tile:nth-of-type(2){
-    background-color:rgb(252, 229, 126);
+.trips .tile .text-preview{
+    font-size:16px;
+    padding:20px;
 }
 
-.romb-tile:nth-of-type(3){
-    background-color:rgb(156, 192, 240);
+
+.trips .section-title{
+    font-family: 'Oasis', sans-serif;
+    margin-top:0px;
+    padding-top:0px;
+    margin-bottom:30px;
+    font-size: 7vw;
+    width: 100%;
+    text-align: center;
 }
 
-.romb-tile:nth-of-type(4){
-    background-color:rgb(157, 206, 169);
-}
-
-.romb-tile img {
-    /* transform:skew(10deg); */
-    width:100%;
-    height:auto;
-    margin:-10px;
-    padding:0px;
-}
-
-.romb-tile .tile-info{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-evenly;
-    padding:15px;
-}
-
-.romb-tile .title{
-    font-family: 'Lato';
-    font-size:min(40px, 4vw);
-}
-
-.romb-tile .trip-info{
-    font-family: 'Lato';
-    font-size:min(24px, 3vw);
+.trips .tile-title, .text-preview{
+    text-shadow: 1px 1px 1px 3px rgb(0, 0, 0,1);
+    background-color:black;
 }
 
 
 /* ******* footer section ****** */
 /* ***************************** */
 
+footer{
+    background-color:#111;
+    color:#eee;
+    height:100px;
+    width:100%;
+    margin:-100px 0px;
+    font-family:'Lato';
+}
+.footer-stuff{
+    /* background-color:yellow; */
+    height:100px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+}
 
+.footer-stuff > *{
+    margin:0px 10px;
+}
+
+.footer-stuff img{
+    height:24px;
+    margin:0px 10px;
+
+}
+
+.footer-stuff a{
+    filter:brightness(70%);
+    transition: filter 0.5s;
+}
+
+.footer-stuff a:hover{
+    filter:brightness(140%);
+}
+
+.login{
+    text-decoration: none;
+    color:#555;
+    transition:color 0.5s;
+}
+
+.login:hover{
+    color:#eee;
+}
 
 
 
@@ -557,6 +589,27 @@ body {
     }
 
     .blog .tile img{
+        width:fill;
+        height:auto;
+    }
+
+
+
+    .trips{
+        grid-template-columns:1fr;
+        grid-template-rows:auto repeat(4, 1 fr);
+        grid-gap:5vw;
+        /* padding: 60px 3vw; */
+        margin:0px auto; 
+    
+    }
+    
+    .trips .section-title{
+        grid-column-start:span 1;
+        /* background-color:#56747f; */
+    }
+
+    .trips .tile img{
         width:fill;
         height:auto;
     }
