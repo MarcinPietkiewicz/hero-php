@@ -73,26 +73,24 @@
         <!-- <a href="#contact" class="chevron down"></a> -->
     </div>
 
-    <div id="trips" class="section">
-        <div class="section-title">upcoming trips</div>
-        <div class="romb-tile">
+    <div id="trips" class="section trips">
+        <div class="section-title">trips</div>
+        <div class="tile">
             <div class="tile-image"><img src="assets/018.jpg"></div>
-            <div class="tile-info">
-            <div class="title">Beach run!</div>
-            <div class="trip-info">Summer chill rush - 40km - walking and running through tough sand and brisky water!</div>
-        </div></div>
-        <div class="romb-tile">
+            <div class="tile-title">Beach run challenge - 10/20km</div>
+            <div class="text-preview">Welcome summer by visit villages by the sea - on foot!</div>
+    </div>
+    <div class="tile">
             <div class="tile-image"><img src="assets/019.jpg"></div>
-            <div class="tile-info">
-            <div class="title">Mountain run!</div>
-            <div class="trip-info">Summer chill rush - 40km - walking and running through tough sand and brisky water!</div>
-        </div></div>
-        <div class="romb-tile">
+            <div class="tile-title">Bella Italia Montagna</div>
+            <div class="text-preview">The region with rich vine, views and challenges - Piedmont awaits you - 60km 1 week trail</div>
+    </div>
+    <div class="tile">
             <div class="tile-image"><img src="assets/020.jpg"></div>
-            <div class="tile-info">
-            <div class="title">Village tresspass!</div>
-            <div class="trip-info">Summer chill rush - 40km - walking and running through tough sand and brisky water!</div>
-        </div></div>
+            <div class="tile-title">Know your village - now with more mileage</div>
+            <div class="text-preview">A quick run and stroll through beautiful countryside Polish villages - the long June weekend trip</div>
+    </div>
+
     </div>
     <footer>
         <div class="footer-stuff">
